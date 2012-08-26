@@ -1,0 +1,38 @@
+<!-- Copyright (c) 2000-2012 etracker GmbH. All rights reserved. -->
+<!-- This material may not be reproduced, displayed, modified or distributed -->
+<!-- without the express prior written permission of the copyright holder. -->
+
+<!-- BEGIN etracker Tracklet 3.0 -->
+<script type="text/javascript">document.write(String.fromCharCode(60)+'script type="text/javascript" src="http'+("https:"==document.location.protocol?"s":"")+'://code.etracker.com/t.js?et=<?php echo $this->et_securecode; ?>">'+String.fromCharCode(60)+'/script>');</script>
+
+<!-- etracker PARAMETER 3.0 -->
+<script type="text/javascript">
+    var et_pagename     = "<?php echo $this->et_pagename; ?>";
+    var et_areas        = "<?php echo $this->et_areas; ?>";
+    var et_url          = "<?php echo $this->et_url; ?>";
+    var et_target       = "<?php echo $this->et_target; ?>";
+    var et_ilevel       = <?php echo $this->et_level; ?>;
+</script>
+<!-- etracker PARAMETER END -->
+
+<script type="text/javascript">_etc();</script>
+
+<noscript>
+    <p>
+        <a href="http://www.etracker.com">
+            <img style="border:0px;" alt="" src="https://www.etracker.com/nscnt.php?et=<?php echo $this->securecode; ?>" />
+        </a>
+    </p>
+</noscript>
+
+<!-- etracker CODE NOSCRIPT 3.0 -->
+<noscript>
+    <p>
+        <a href="http://www.etracker.de/app?et=<?php echo $this->securecode; ?>">
+            <img style="border:0px;" alt="" src="https://www.etracker.de/cnt.php?et=<?php echo $this->securecode; ?>&amp;v=3.0&amp;java=n&amp;et_easy=0&amp;et_pagename=<?php echo rawurlencode($this->et_pagename); ?>&amp;et_areas=<?php echo rawurlencode($this->et_areas); ?>&amp;et_url=<?php echo $this->et_url; ?>&amp;et_target=<?php echo $this->et_target; ?>&amp;et_ilevel=<?php echo $this->et_level; ?>" />
+        </a>
+    </p>
+</noscript>
+<!-- etracker CODE NOSCRIPT END-->
+
+<!-- etracker CODE END -->
